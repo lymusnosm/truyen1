@@ -1,6 +1,6 @@
 class BinhluansController < ApplicationController
   def index
-    @binhluans=Binhluan.all
+    @binhluans=Binhluan.order("updated_at DESC")
   end
   def new
   @binhluan = Binhluan.new
