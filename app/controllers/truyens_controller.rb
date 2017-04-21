@@ -2,7 +2,7 @@ class TruyensController < ApplicationController
   def show
     @theloais=Theloai.all
     @truyen = Truyen.find(params[:id])
-    @binhluans=@truyen.binhluans.order("created_at DESC")
+    @binhluans=@truyen.binhluans.order("updated_at DESC")
     @binhluan = Binhluan.new
   end
   def all
