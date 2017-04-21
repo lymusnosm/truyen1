@@ -49,7 +49,7 @@ test: &test
 #
 production:
   <<: *default
-  database: truyen
+  database: sql12170244
   username: sql12170244
   password: 9Gb4VPT1JX
 
